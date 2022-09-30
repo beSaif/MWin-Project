@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:mwinproject/Provider/SearchProvider.dart';
-import 'package:mwinproject/Screens/HomePage/Components/HomepageBody.dart';
 import 'package:mwinproject/Screens/HomePage/Homepage.dart';
 import 'package:provider/provider.dart';
 
 void main() {
   runApp(MultiProvider(providers: [
     ChangeNotifierProvider(create: (context) => SearchProvider())
-  ], child: MyApp()));
+  ], child: const MyApp()));
 }
 
 class MyApp extends StatelessWidget {

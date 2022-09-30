@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'package:mwinproject/Provider/SearchProvider.dart';
 import 'package:mwinproject/Screens/HomePage/InAppWebView/Components/InAppWebViewBody.dart';
 import 'package:provider/provider.dart';
@@ -37,7 +36,7 @@ class _HomePageBodyState extends State<HomePageBody> {
             ),
             ElevatedButton(
                 onPressed: () {
-                  if (url == null || url.isEmpty) {
+                  if (url.isEmpty) {
                     // code for snackbar here
                     ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
                       content: Text('Please enter a url'),

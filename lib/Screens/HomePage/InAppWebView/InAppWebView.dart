@@ -11,7 +11,7 @@ class InAppWebView extends StatefulWidget {
 class _InAppWebViewState extends State<InAppWebView> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       body: InAppWebViewBody(),
     );
   }
